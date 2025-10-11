@@ -1,0 +1,185 @@
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      color: #f5f5f5;
+      background: #0a0a1a;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 5%;
+      background: rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00ffcc;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #00ffcc; }
+
+    /* Hero with animated background */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 6rem 2rem;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #00ffcc;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero .btn-group { margin-top: 1rem; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      border-radius: 25px;
+      border: 2px solid #00ffcc;
+      background: transparent;
+      color: #00ffcc;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn:hover { background: #00ffcc; color: #111; }
+
+    section { padding: 4rem 8%; position: relative; z-index: 2; }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #00ffcc;
+    }
+
+    .services, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 1.5rem;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.08); }
+
+    .card h4 { margin-bottom: 0.8rem; color: #fff; }
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #bbb;
+      z-index: 2;
+      position: relative;
+    }
+
+    footer a { color: #00ffcc; text-decoration: none; }
+
+    /* Canvas background styling */
+    #candlesCanvas {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      background: #0a0a1a;
+    }
+
+    /* Contact Form Styling */
+    .contact-form {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 600px;
+      margin: 2rem auto 0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #00ffcc;
+    }
+
+    .form-group { margin-bottom: 1rem; }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    input::placeholder, textarea::placeholder { color: #bbb; }
+
+    textarea { resize: none; height: 120px; }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 25px;
+      background: #00ffcc;
+      color: #111;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover { background: #00ccaa; }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DeltaQuant Solutions</title>
+
+  <!-- Link external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><img src="deltaquant_logo.jpg" alt="DeltaQuant Logo" style="height:100px;"></h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Animated Canvas Background -->
+  <canvas id="candlesCanvas"></canvas>
+
+  <section class="hero">
+    <h2>Where Intelligence Powers Every Trade</h2>
+    <p>Empowering smarter decisions through Data, Software & Trading</p>
+    <div class="btn-group">
+      <a href="#services" class="btn">Get Started</a>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h3>👋 About DeltaQuant</h3>
+    <p>We fuse data science, software engineering, and quantitative trading to build cutting-edge solutions that help institutions and individuals dominate the financial markets.</p>
+  </section>
+
+  <section id="services">
+    <h3>⚙️ What We Offer</h3>
+    <div class="services">
+      <div class="card"><h4>Algorithmic Trading Systems</h4><p>Design and deploy intelligent bots and strategies for Forex.</p></div>
+      <div class="card"><h4>Data Analytics Platforms</h4><p>Real-time dashboards and predictive tools built on AI.</p></div>
+      <div class="card"><h4>Custom Software Solutions</h4><p>Automation tools, APIs, and integrations for financial ecosystems.</p></div>
+      <div class="card"><h4>Anomaly Detection & Risk Tools</h4><p>Identify and respond to risks in real-time using ML models.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h3>📈 Projects in Action</h3>
+    <div class="projects">
+      <div class="card"><h4>Auto Trading Bot for EUR/USD</h4><p>Achieved +15% simulated returns.</p></div>
+      <div class="card"><h4>Fraud Detection Dashboard</h4><p>Real-time monitoring using Isolation Forest.</p></div>
+      <div class="card"><h4>Live Signal Pipeline</h4><p>Integrated with MetaTrader 5 + email alerts.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>📬 Let’s Work Together</h3>
+    <p style="text-align:center;">Ready to build smarter financial tools with DeltaQuant?</p>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <h2>📬 Contact Us</h2>
+
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone / WhatsApp (optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="service">Service Interest *</label>
+        <select id="service" name="service" required>
+          <option value="">-- Select a Service --</option>
+          <option>📘 Teaching / Training</option>
+          <option>📊 Data Science Projects</option>
+          <option>💻 Software Development</option>
+          <option>📈 Trading Solutions</option>
+          <option>🤝 Partnership / Collaboration</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message / Project Details *</label>
+        <textarea id="message" name="message" placeholder="Tell us about your request..." required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 DeltaQuant Solutions. All rights reserved.</p>
+    <p>Email: <a href="mailto:hello@deltaquantsolutions.com">hello@deltaquantsolutions.com</a> | Lagos, Nigeria</p>
+  </footer>
+
+  <!-- Link external scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>
