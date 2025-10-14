@@ -65,10 +65,11 @@
       };
 
       try {
-        const res = await fetch("http://localhost:10000/submit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData)
+        const res = await fetch("https://deltaquant-solutions.onrender.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        
         });
 
         if (res.ok) {
