@@ -65,11 +65,10 @@
       };
 
       try {
-        const res = await fetch("https://deltaquant-solutions.onrender.com/submit", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData)
-        
+            fetch("https://deltaquant-solutions.onrender.com/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
         });
 
         if (res.ok) {
